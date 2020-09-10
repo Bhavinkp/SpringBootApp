@@ -1,5 +1,8 @@
 package com.bkp.learning.pojo;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.NumberFormat;
@@ -10,8 +13,14 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel
+@Entity
 public class User {
 
+	public User() {
+		super();
+	}
+	@Id
+	@GeneratedValue
 	@NumberFormat
 	private int id;
 	
