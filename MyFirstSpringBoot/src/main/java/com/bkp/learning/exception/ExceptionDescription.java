@@ -10,7 +10,6 @@ public class ExceptionDescription {
 	
 	
 	public ExceptionDescription() {
-		// TODO Auto-generated constructor stub
 	}
 
 

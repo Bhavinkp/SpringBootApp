@@ -8,9 +8,12 @@ import org.springframework.stereotype.Component;
 import com.bkp.learning.pojo.User;
 
 @Component
-public class UserDao extends ArrayList{
+public class UserDao{
 
-	private static List<User> userList = new ArrayList<User>();
+	/**
+	 * 
+	 */
+	private static List<User> userList = new ArrayList<>();
 	
 	private static int id = 5;
 	

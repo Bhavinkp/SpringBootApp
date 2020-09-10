@@ -1,9 +1,25 @@
 package com.bkp.learning.pojo;
 
+import javax.validation.constraints.Size;
+
+import org.springframework.format.annotation.NumberFormat;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel
 public class User {
 
+	@NumberFormat
 	private int id;
+	
+	@Size(min = 2, message = "Name should have atleast 2 charachters")
+	@ApiModelProperty(notes = "Name should have atleast 2 charachters")
 	private String userName;
+	
+	@JsonIgnore
 	private String userRight;
 	/**
 	 * @return the id

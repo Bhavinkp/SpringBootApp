@@ -14,7 +14,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class ApplicationExceptionHandler extends ResponseEntityExceptionHandler {
 
 	public ApplicationExceptionHandler() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	@ExceptionHandler(UserNotFoundException.class)
